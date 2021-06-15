@@ -26,7 +26,7 @@ for num in x:
     
 vystup = {}
 for (key, value) in obj.items():
-   # Check if key is even then add pair to new dictionary
+   
     if value != []:
         vystup[key] = len(value)
         
