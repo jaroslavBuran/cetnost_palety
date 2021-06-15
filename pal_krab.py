@@ -24,11 +24,11 @@ while True:
 for num in x:
     obj["P "+str(num)].append(num)
     
-koko = {}
+vystup = {}
 for (key, value) in obj.items():
    # Check if key is even then add pair to new dictionary
     if value != []:
-        koko[key] = len(value)
+        vystup[key] = len(value)
         
 
-print(yaml.dump(koko, default_flow_style=False))
+print(yaml.dump(vystup, default_flow_style=False))
