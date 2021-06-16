@@ -11,11 +11,11 @@ def cislo_pal():
 
 def pocet_opakovani():       
        
-    opakovani = "99"
-    while opakovani not in range(1,36) and opakovani.isnumeric() == False:  #běžně se na paletě nevyskytuje víc než 30 krabic, v extrémních případech 35
+    opakovani = "xyz"
+    while opakovani.isnumeric() == False:  
         opakovani = input("zadej počet opakování dané palety (1-35): ")
 
-        if opakovani not in range(1,36) and opakovani.isnumeric() == False:
+        if opakovani.isnumeric() == False:
             print("Prosím vkládat pouze čísla 1 - 35.")
 
     return int(opakovani) 
